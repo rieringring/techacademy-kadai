@@ -1,0 +1,440 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Abel");
+/* Base
+------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: #F9F8F6;
+  font-size: 0.8em;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.3;
+  letter-spacing: 0.1em; }
+
+nav {
+  padding: 10px; }
+
+p {
+  padding: 8px 8px;
+  font-size: 0.8em; }
+
+h3 {
+  padding: 10px 10px 10px 0px;
+  color: #887f69; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: 0 auto; }
+  main .container {
+    width: 74.4%; }
+    main .container .owl-dot span {
+      border-radius: 0px;
+      width: 30px;
+      height: 4px; }
+  main .container h2 {
+    padding: 40px 0; }
+    main .container h2 img {
+      width: 100%; }
+  main .list-item {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between; }
+  main .list-item-box {
+    width: 33%;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 2px; }
+    main .list-item-box img {
+      width: 100%; }
+  main .sidebar {
+    width: 23.4%; }
+    main .sidebar .sige-search {
+      height: 80px;
+      background-color: white; }
+      main .sidebar .sige-search .search-form {
+        position: relative; }
+        main .sidebar .sige-search .search-form .form-control {
+          width: 100%;
+          padding: 6px;
+          background-color: #eee;
+          border: solid 0px; }
+        main .sidebar .sige-search .search-form .search_icon {
+          position: absolute;
+          right: 8px;
+          top: 8px; }
+      main .sidebar .sige-search .side-search-logo {
+        padding: 10px 20px 20px 20px; }
+  main .side-page-link {
+    background-color: white; }
+  main .side-link {
+    background-color: white;
+    padding-bottom: 10px; }
+    main .side-link .side-icon {
+      padding: 0px 10px; }
+      main .side-link .side-icon img {
+        width: 100%; }
+    main .side-link p {
+      padding: 3px 8px; }
+    main .side-link .more_btn {
+      display: block;
+      margin: 0 auto; }
+  main .side-categories {
+    background: white; }
+    main .side-categories .side-category {
+      position: relative;
+      height: 50px; }
+    main .side-categories .side-category-link {
+      display: inline-block;
+      padding: 15px 0px; }
+      main .side-categories .side-category-link span {
+        padding-left: 10px; }
+      main .side-categories .side-category-link .next_icon {
+        position: absolute;
+        right: 16px;
+        top: 17px; }
+  main .side-logo {
+    background: #887f69;
+    padding: 15px;
+    margin: 15px 0px 10px;
+    position: relative; }
+    main .side-logo .side-logo-btn {
+      position: absolute;
+      right: 16px;
+      top: 17px; }
+      main .side-logo .side-logo-btn .more_btn {
+        display: inline-block;
+        margin-bottom: 10px; }
+
+.shoppng-guide-inner {
+  display: flex; }
+  .shoppng-guide-inner .shoppng-guide-item {
+    background-color: white;
+    padding: 20px 20px;
+    margin: 2px;
+    width: 49.5%; }
+    .shoppng-guide-inner .shoppng-guide-item .card-img {
+      width: 100%; }
+
+footer {
+  max-width: 940px;
+  justify-content: space-between;
+  margin: 10px;
+  color: #c9c6c0; }
+  footer .footer-contents {
+    text-align: right; }
+    footer .footer-contents p {
+      text-align: center; }
+    footer .footer-contents .pagetop-logo {
+      padding: 10px; }
+  footer nav {
+    border-top: 1px solid #887f69; }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 550px;
+    margin: 0 auto; }
+
+.breadcrumb-list {
+  background-color: #e8e4da;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 6px; }
+  .breadcrumb-list ul {
+    display: flex; }
+    .breadcrumb-list ul a {
+      color: #887f69; }
+
+.product-contents {
+  background: #fff;
+  padding: 40px 60px; }
+  .product-contents .product-name {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0px;
+    margin-bottom: 20px; }
+    .product-contents .product-name h2 {
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 0; }
+    .product-contents .product-name p {
+      color: #887f69;
+      padding: 0;
+      font-style: italic;
+      font-family: ヒラギノ角ゴ Pro; }
+  .product-contents .product-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .product-contents .product-images .product-image-main {
+      margin-right: 5px;
+      width: 73%; }
+      .product-contents .product-images .product-image-main img {
+        background-color: black;
+        width: 100%;
+        display: block; }
+    .product-contents .product-images .product-image-thumbnails {
+      width: 28.1%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .product-contents .product-images .product-image-thumbnails .product-image-thumbnail {
+        width: 48%;
+        margin-bottom: 8px; }
+        .product-contents .product-images .product-image-thumbnails .product-image-thumbnail img {
+          width: 100%;
+          display: block; }
+  .product-contents .products-inner table {
+    width: 100%; }
+    .product-contents .products-inner table td {
+      border: 1px solid #e8e4da;
+      padding: 10px 0;
+      text-align: center; }
+    .product-contents .products-inner table th {
+      border: 1px solid #e8e4da;
+      padding: 10px 0; }
+    .product-contents .products-inner table .table-bg {
+      background: #f9f9f5;
+      color: #887f69; }
+  .product-contents .price-qua-cart {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    border-bottom: 1px solid #e3e8cf; }
+    .product-contents .price-qua-cart .price-qua {
+      width: 56%; }
+      .product-contents .price-qua-cart .price-qua p {
+        font-style: italic;
+        font-family: ヒラギノ角ゴ Pro;
+        font-size: 16px;
+        margin-left: 50px; }
+        .product-contents .price-qua-cart .price-qua p span {
+          color: #e80f66;
+          font-size: 24px; }
+    .product-contents .price-qua-cart .item-inner-cart-btn {
+      width: 39%; }
+      .product-contents .price-qua-cart .item-inner-cart-btn img {
+        width: 100%; }
+  .product-contents .item-inner-price {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e3e8cf;
+    border-top: 1px solid #e3e8cf; }
+    .product-contents .item-inner-price .item-inner-cart {
+      width: auto; }
+    .product-contents .item-inner-price p {
+      font-size: 1.5em; }
+    .product-contents .item-inner-price span {
+      color: red; }
+    .product-contents .item-inner-price .item-inner-cart-btn {
+      padding: 20px; }
+  .product-contents .item-inner-quantity {
+    display: flex;
+    align-items: center;
+    padding: 20px 0; }
+    .product-contents .item-inner-quantity .text-color {
+      padding: 5px;
+      margin-left: 30px; }
+  .product-contents .products-explanation .explanation-inner {
+    border-bottom: 1px solid #333; }
+  .product-contents .products-explanation h4 {
+    color: #887f69;
+    padding: 10px 0px; }
+  .product-contents .products-explanation p {
+    padding: 10px 0px; }
+  .product-contents .products-explanation table {
+    width: 100%; }
+    .product-contents .products-explanation table td {
+      border: 1px solid #e8e4da;
+      padding: 10px;
+      width: 70%;
+      color: #887f69; }
+    .product-contents .products-explanation table th {
+      border: 1px solid #e8e4da;
+      padding: 10px 0;
+      color: #887f69; }
+    .product-contents .products-explanation table .table-bg {
+      background: #f9f9f5;
+      text-align: center;
+      width: 30%; }
+
+.main-logo img {
+  width: 100%; }
+
+.btn-aria {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  font-weight: bold; }
+  .btn-aria .btn-back {
+    background-color: #887f69;
+    width: 15%;
+    padding: 10px; }
+  .btn-aria .btn-next {
+    background-color: #887f69;
+    width: 15%;
+    padding: 10px; }
+
+@media (min-width: 641px) {
+  .sp_logo,
+  .sp_navi,
+  .sp_newitems_logo,
+  .sp_popular_items_logo,
+  .sp_shoppng_guide_logo,
+  .main-splogo {
+    display: none; } }
+.pc_navi,
+.sp_navi {
+  padding: 20px 0; }
+  .pc_navi ul,
+  .sp_navi ul {
+    display: flex; }
+    .pc_navi ul li,
+    .sp_navi ul li {
+      margin-left: 20px; }
+    .pc_navi ul .sp_menu_toggle,
+    .sp_navi ul .sp_menu_toggle {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      background-color: #e8e4da; }
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+    header .sp_logo {
+      margin: 0 auto; }
+    header .pc_logo,
+    header .pc_navi,
+    header .sp_navi_li {
+      display: none; }
+    header #menu {
+      cursor: pointer; }
+    header .sp_menu_toggle {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      background-color: #e8e4da; }
+
+  main {
+    flex-direction: column;
+    margin: 5px; }
+    main .container {
+      width: 100%; }
+      main .container .pc_newitems_logo,
+      main .container .pc_popular_items_logo,
+      main .container .pc_shoppng_guide_logo,
+      main .container .pc_popular_items_logo,
+      main .container .main-logo {
+        display: none; }
+      main .container .sp_newitems_logo {
+        text-align: center; }
+      main .container .sp_shoppng_guide_logo {
+        margin: 0 auto; }
+      main .container .sp_popular_items_logo img,
+      main .container .sp_newitems_logo img,
+      main .container .sp_shoppng_guide_logo img {
+        width: 40%; }
+      main .container .product-contents {
+        padding: 5px; }
+        main .container .product-contents .product-name {
+          flex-direction: column; }
+        main .container .product-contents .price-qua-cart {
+          flex-direction: column; }
+          main .container .product-contents .price-qua-cart .price-qua {
+            width: 100%; }
+          main .container .product-contents .price-qua-cart p {
+            font-style: italic;
+            font-family: ヒラギノ角ゴ Pro;
+            font-size: 28px;
+            margin-left: 50px; }
+          main .container .product-contents .price-qua-cart span {
+            color: #e80f66;
+            font-size: 44px; }
+          main .container .product-contents .price-qua-cart .item-inner-cart-btn {
+            margin: 0 auto; }
+        main .container .product-contents .product-images {
+          flex-direction: column; }
+        main .container .product-contents .product-image-main {
+          width: 100%; }
+        main .container .product-contents .product-image-thumbnails {
+          width: 100%;
+          margin-top: 10px; }
+          main .container .product-contents .product-image-thumbnails .product-image-thumbnail {
+            width: 19%; }
+      main .container .btn-back,
+      main .container .btn-next {
+        width: 30%; }
+      main .container .main-splogo img {
+        width: 100%; }
+    main .list-item-box {
+      width: 49.5%;
+      padding: 5px; }
+    main .popular-items .sp_popular_items_logo {
+      text-align: center; }
+    main .shoppng-guide .sp_shoppng_guide_logo {
+      text-align: center; }
+    main .shoppng-guide .shoppng-guide-inner {
+      flex-direction: column;
+      width: 100%; }
+      main .shoppng-guide .shoppng-guide-inner .shoppng-guide-item {
+        width: 98%; }
+    main .sidebar {
+      width: 100%; }
+      main .sidebar .sige-search {
+        width: 100%;
+        margin: 5px; }
+      main .sidebar .side-search-logo {
+        display: none; }
+      main .sidebar .search-form {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px; }
+        main .sidebar .search-form .search_icon {
+          padding-top: 30px; }
+        main .sidebar .search-form .form-control {
+          background-color: #eee;
+          border: solid 0px; }
+      main .sidebar .side-logo {
+        width: 97%;
+        margin: 5px; }
+      main .sidebar .side-icon {
+        width: 100%; }
+      main .sidebar .side-sp {
+        display: flex; }
+      main .sidebar .more_btn {
+        margin-left: 0px; }
+
+  footer .footer-contents {
+    text-align: center; }
+  footer ul {
+    flex-wrap: wrap;
+    max-width: 340px;
+    justify-content: center; }
+    footer ul li {
+      line-height: 1.7; }
+    footer ul a {
+      font-size: 12px; } }
+
+/*# sourceMappingURL=style.css.map */
