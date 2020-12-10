@@ -45,7 +45,12 @@ header {
     display: flex;
     justify-content: space-between; // background-color: pink;
     padding: 20px 0;
-
+    .pc_navi ul {
+        align-items: baseline;
+        .sns {
+            padding-left: 10px;
+        }
+    }
 
 
 

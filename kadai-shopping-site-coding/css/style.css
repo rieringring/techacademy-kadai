@@ -35,6 +35,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 0; }
+  header .pc_navi ul {
+    align-items: baseline; }
+    header .pc_navi ul .sns {
+      padding-left: 10px; }
 
 main {
   display: flex;
